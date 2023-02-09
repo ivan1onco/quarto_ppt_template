@@ -1,6 +1,6 @@
 # For the first slide
 
-Please replace the cover.jpg with yours
+Please replace the image/cover.jpg with yours
 
 # For the Quarto
 
