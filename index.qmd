@@ -1,0 +1,60 @@
+---
+title: "Play To Win"
+format:
+  revealjs:
+    #incremental: true
+    logo: image/logo.png
+    footer: "INTERNAL USE"
+    slide-number: true
+    multiplex: true
+    embed-resources: true
+    theme: [simple, assets/monash.scss]
+    show-slide-number: all
+    controls: true
+    width: 1280
+    height: 720
+    css: [assets/syntax-highlight.css, assets/custom.css, assets/pacman.css]
+    header-includes: |
+      <link rel="stylesheet" href="/assets/fontawesome-free-6.1.1-web/css/fontawesome.min.css">
+      <script defer src="/assets/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+---
+
+
+# {background-color="white"}
+ <img src="image/cover.jpg" height="100%" width="100%"  style="vertical-align:middle; ">
+---
+
+
+## Sanofi Slides template 1
+
+#### Quarto
+
+Please find the tutorial of Quarto in [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+
+::: font-middle
+
+- Listing 1
+- Listing 2
+
+:::
+
+---
+
+### Inser Code
+
+<font size = '6'> highlight the code line 2-4 </font>
+
+
+```{r highlight}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "|2-4"
+library(ggplot2)
+dsamp <- diamonds[sample(nrow(diamonds), 1000), ]
+(d <- ggplot(dsamp, aes(carat, price)) +
+  geom_point(aes(colour = clarity)))
+d + scale_colour_brewer()
+```
+---
+
+
